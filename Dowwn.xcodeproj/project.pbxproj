@@ -15,6 +15,9 @@
 		8E01E9CF19D91C5300E11F9A /* DowwnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */; };
 		8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
 		8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931219D9329E00A49F3E /* CreateEventViewController.swift */; };
+		8E14936919DA14E500A49F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14936819DA14E500A49F3E /* ProfileViewController.swift */; };
+		8E14936A19DA14E500A49F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14936819DA14E500A49F3E /* ProfileViewController.swift */; };
+		8E14936B19DA14F200A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
 		8E6235E119D9252300FBD458 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DE19D9252300FBD458 /* Bolts.framework */; };
 		8E6235E219D9252300FBD458 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DF19D9252300FBD458 /* Parse.framework */; };
 		8E6235E619D9274700FBD458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235E519D9274700FBD458 /* AudioToolbox.framework */; };
@@ -56,6 +59,7 @@
 		8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowwnTests.swift; sourceTree = "<group>"; };
 		8E14931019D9329100A49F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8E14931219D9329E00A49F3E /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		8E14936819DA14E500A49F3E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dowwn-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E6235DE19D9252300FBD458 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1-2/Bolts.framework"; sourceTree = "<group>"; };
 		8E6235DF19D9252300FBD458 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1-2/Parse.framework"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			children = (
 				8E01E9B519D91C5300E11F9A /* AppDelegate.swift */,
 				8E14931019D9329100A49F3E /* FeedViewController.swift */,
+				8E14936819DA14E500A49F3E /* ProfileViewController.swift */,
 				8E14931219D9329E00A49F3E /* CreateEventViewController.swift */,
 				8E01E9BC19D91C5300E11F9A /* Main.storyboard */,
 				8E01E9BF19D91C5300E11F9A /* Images.xcassets */,
@@ -251,6 +256,7 @@
 				TargetAttributes = {
 					8E01E9AF19D91C5300E11F9A = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = EG5CG224Q3;
 					};
 					8E01E9C719D91C5300E11F9A = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -337,6 +343,7 @@
 			files = (
 				8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */,
 				8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */,
+				8E14936919DA14E500A49F3E /* ProfileViewController.swift in Sources */,
 				8E01E9B919D91C5300E11F9A /* Dowwn.xcdatamodeld in Sources */,
 				8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */,
 			);
@@ -346,6 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E14936A19DA14E500A49F3E /* ProfileViewController.swift in Sources */,
+				8E14936B19DA14F200A49F3E /* FeedViewController.swift in Sources */,
 				8E01E9CF19D91C5300E11F9A /* DowwnTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/drakhamimov/Downloads/parse-library-1-2",
@@ -481,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/drakhamimov/Downloads/parse-library-1-2",
