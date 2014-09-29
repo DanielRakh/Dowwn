@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E9B519D91C5300E11F9A /* AppDelegate.swift */; };
 		8E01E9B919D91C5300E11F9A /* Dowwn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E9B719D91C5300E11F9A /* Dowwn.xcdatamodeld */; };
-		8E01E9BB19D91C5300E11F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E9BA19D91C5300E11F9A /* ViewController.swift */; };
 		8E01E9BE19D91C5300E11F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BC19D91C5300E11F9A /* Main.storyboard */; };
 		8E01E9C019D91C5300E11F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BF19D91C5300E11F9A /* Images.xcassets */; };
 		8E01E9C319D91C5300E11F9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */; };
 		8E01E9CF19D91C5300E11F9A /* DowwnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */; };
+		8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
+		8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931219D9329E00A49F3E /* CreateEventViewController.swift */; };
 		8E6235E119D9252300FBD458 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DE19D9252300FBD458 /* Bolts.framework */; };
 		8E6235E219D9252300FBD458 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DF19D9252300FBD458 /* Parse.framework */; };
 		8E6235E619D9274700FBD458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235E519D9274700FBD458 /* AudioToolbox.framework */; };
@@ -47,13 +48,14 @@
 		8E01E9B419D91C5300E11F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E01E9B519D91C5300E11F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E01E9B819D91C5300E11F9A /* Dowwn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dowwn.xcdatamodel; sourceTree = "<group>"; };
-		8E01E9BA19D91C5300E11F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E01E9BD19D91C5300E11F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E01E9BF19D91C5300E11F9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8E01E9C219D91C5300E11F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E01E9C819D91C5300E11F9A /* DowwnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowwnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E01E9CD19D91C5300E11F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowwnTests.swift; sourceTree = "<group>"; };
+		8E14931019D9329100A49F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8E14931219D9329E00A49F3E /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dowwn-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E6235DE19D9252300FBD458 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1-2/Bolts.framework"; sourceTree = "<group>"; };
 		8E6235DF19D9252300FBD458 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1-2/Parse.framework"; sourceTree = "<group>"; };
@@ -161,7 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				8E01E9B519D91C5300E11F9A /* AppDelegate.swift */,
-				8E01E9BA19D91C5300E11F9A /* ViewController.swift */,
+				8E14931019D9329100A49F3E /* FeedViewController.swift */,
+				8E14931219D9329E00A49F3E /* CreateEventViewController.swift */,
 				8E01E9BC19D91C5300E11F9A /* Main.storyboard */,
 				8E01E9BF19D91C5300E11F9A /* Images.xcassets */,
 				8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */,
@@ -332,9 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E01E9BB19D91C5300E11F9A /* ViewController.swift in Sources */,
 				8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */,
+				8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */,
 				8E01E9B919D91C5300E11F9A /* Dowwn.xcdatamodeld in Sources */,
+				8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
