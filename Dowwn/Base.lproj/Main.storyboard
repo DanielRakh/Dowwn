@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BEC-OD-box">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Dowwn-->
@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" title="Dowwn" id="1B3-E9-VTa">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fHu-M9-3z6">
                             <connections>
-                                <segue destination="zPD-vR-WJn" kind="presentation" id="fr0-iC-oI3"/>
+                                <segue destination="zPD-vR-WJn" kind="show" id="fr0-iC-oI3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,11 +83,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viV-uR-JDm">
-                                <rect key="frame" x="93" y="91" width="414" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufN-Bm-vPg">
                                 <rect key="frame" x="283" y="415" width="34" height="30"/>
                                 <state key="normal" title="Save">
@@ -98,23 +93,26 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtitle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2N5-Fo-PsH">
-                                <rect key="frame" x="93" y="274" width="414" height="30"/>
+                                <rect key="frame" x="90" y="274" width="420" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viV-uR-JDm">
+                                <rect key="frame" x="90" y="141" width="420" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="viV-uR-JDm" secondAttribute="trailing" constant="77" id="8bS-Zc-GmC"/>
-                            <constraint firstItem="viV-uR-JDm" firstAttribute="height" secondItem="2N5-Fo-PsH" secondAttribute="height" id="PUv-BG-KEU"/>
-                            <constraint firstItem="ufN-Bm-vPg" firstAttribute="top" secondItem="2N5-Fo-PsH" secondAttribute="bottom" constant="111" id="PeM-Ma-Yyj"/>
-                            <constraint firstAttribute="centerX" secondItem="viV-uR-JDm" secondAttribute="centerX" id="QVU-k2-LUC"/>
-                            <constraint firstItem="viV-uR-JDm" firstAttribute="leading" secondItem="3bp-PX-mOH" secondAttribute="leadingMargin" constant="77" id="Xaf-mq-j9b"/>
-                            <constraint firstItem="viV-uR-JDm" firstAttribute="centerX" secondItem="2N5-Fo-PsH" secondAttribute="centerX" id="Y22-bf-pF9"/>
-                            <constraint firstAttribute="centerX" secondItem="ufN-Bm-vPg" secondAttribute="centerX" id="i4r-Iz-cTg"/>
-                            <constraint firstItem="viV-uR-JDm" firstAttribute="top" secondItem="SYM-Oo-PfU" secondAttribute="bottom" constant="71" id="kPq-g3-evf"/>
-                            <constraint firstItem="2N5-Fo-PsH" firstAttribute="top" secondItem="viV-uR-JDm" secondAttribute="bottom" constant="153" id="vGY-N9-DsD"/>
-                            <constraint firstItem="viV-uR-JDm" firstAttribute="width" secondItem="2N5-Fo-PsH" secondAttribute="width" id="wGK-Zr-Zjl"/>
+                            <constraint firstItem="2N5-Fo-PsH" firstAttribute="width" secondItem="3bp-PX-mOH" secondAttribute="width" multiplier="0.7" id="37k-nB-oAA"/>
+                            <constraint firstAttribute="centerX" secondItem="viV-uR-JDm" secondAttribute="centerX" id="ITX-QY-XIs"/>
+                            <constraint firstAttribute="centerX" secondItem="2N5-Fo-PsH" secondAttribute="centerX" id="R0n-52-Sbc"/>
+                            <constraint firstItem="ufN-Bm-vPg" firstAttribute="top" secondItem="2N5-Fo-PsH" secondAttribute="bottom" constant="111" id="VvM-Vd-h6A"/>
+                            <constraint firstItem="viV-uR-JDm" firstAttribute="top" secondItem="SYM-Oo-PfU" secondAttribute="bottom" constant="77" id="Xxs-Eh-QvJ"/>
+                            <constraint firstItem="viV-uR-JDm" firstAttribute="width" secondItem="3bp-PX-mOH" secondAttribute="width" multiplier="0.7" id="ZEe-rp-uYC"/>
+                            <constraint firstAttribute="centerX" secondItem="ufN-Bm-vPg" secondAttribute="centerX" id="b55-2d-BfR"/>
+                            <constraint firstItem="2N5-Fo-PsH" firstAttribute="top" secondItem="viV-uR-JDm" secondAttribute="bottom" constant="103" id="txa-FK-s6D"/>
                         </constraints>
                     </view>
                     <connections>
