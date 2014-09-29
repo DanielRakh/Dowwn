@@ -9,10 +9,6 @@
 import UIKit
 
 class CreateEventViewController: UIViewController {
-
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var subtitleTextField: UITextField!
-    
     
     
     override func viewDidLoad() {
@@ -20,14 +16,6 @@ class CreateEventViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    
-    //MARK: IBActions
-    @IBAction func saveButtonDidTouch(sender: AnyObject) {
-        
-    }
-    
-    
 
     /*
     // MARK: - Navigation
