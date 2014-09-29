@@ -1,0 +1,10 @@
+PODS:
+  - UIColor+Additions (1.0.1)
+
+DEPENDENCIES:
+  - UIColor+Additions (~> 1.0)
+
+SPEC CHECKSUMS:
+  UIColor+Additions: 6c3ab749f2c0c55b3154c4fd0207de1d3505dda3
+
+COCOAPODS: 0.34.1
