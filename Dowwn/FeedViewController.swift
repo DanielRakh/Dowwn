@@ -21,7 +21,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //MARK: UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 40
     }
     
     
