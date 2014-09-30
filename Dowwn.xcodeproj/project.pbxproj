@@ -16,8 +16,8 @@
 		8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
 		8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931219D9329E00A49F3E /* CreateEventViewController.swift */; };
 		8E14936919DA14E500A49F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14936819DA14E500A49F3E /* ProfileViewController.swift */; };
-		8E14936A19DA14E500A49F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14936819DA14E500A49F3E /* ProfileViewController.swift */; };
-		8E14936B19DA14F200A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
+		8E14938D19DA170600A49F3E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E14938419DA167000A49F3E /* Nimble.framework */; };
+		8E14938E19DA170600A49F3E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E14937919DA165C00A49F3E /* Quick.framework */; };
 		8E6235E119D9252300FBD458 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DE19D9252300FBD458 /* Bolts.framework */; };
 		8E6235E219D9252300FBD458 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DF19D9252300FBD458 /* Parse.framework */; };
 		8E6235E619D9274700FBD458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235E519D9274700FBD458 /* AudioToolbox.framework */; };
@@ -43,6 +43,62 @@
 			remoteGlobalIDString = 8E01E9AF19D91C5300E11F9A;
 			remoteInfo = Dowwn;
 		};
+		8E14937419DA165C00A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14936C19DA165C00A49F3E /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = Quick;
+		};
+		8E14937619DA165C00A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14936C19DA165C00A49F3E /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = QuickTests;
+		};
+		8E14937819DA165C00A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14936C19DA165C00A49F3E /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		8E14937A19DA165C00A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14936C19DA165C00A49F3E /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		8E14938319DA167000A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		8E14938519DA167000A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		8E14938719DA167000A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		8E14938919DA167000A49F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +116,8 @@
 		8E14931019D9329100A49F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8E14931219D9329E00A49F3E /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		8E14936819DA14E500A49F3E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8E14936C19DA165C00A49F3E /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../../Quick/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../../Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dowwn-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E6235DE19D9252300FBD458 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1-2/Bolts.framework"; sourceTree = "<group>"; };
 		8E6235DF19D9252300FBD458 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1-2/Parse.framework"; sourceTree = "<group>"; };
@@ -106,6 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E14938D19DA170600A49F3E /* Nimble.framework in Frameworks */,
+				8E14938E19DA170600A49F3E /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +251,8 @@
 		8E01E9CB19D91C5300E11F9A /* DowwnTests */ = {
 			isa = PBXGroup;
 			children = (
+				8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */,
+				8E14936C19DA165C00A49F3E /* Quick.xcodeproj */,
 				8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */,
 				8E01E9CC19D91C5300E11F9A /* Supporting Files */,
 			);
@@ -203,6 +265,28 @@
 				8E01E9CD19D91C5300E11F9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E14936D19DA165C00A49F3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E14937519DA165C00A49F3E /* Quick.framework */,
+				8E14937719DA165C00A49F3E /* QuickTests.xctest */,
+				8E14937919DA165C00A49F3E /* Quick.framework */,
+				8E14937B19DA165C00A49F3E /* Quick-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E14937D19DA166F00A49F3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E14938419DA167000A49F3E /* Nimble.framework */,
+				8E14938619DA167000A49F3E /* NimbleTests.xctest */,
+				8E14938819DA167000A49F3E /* Nimble.framework */,
+				8E14938A19DA167000A49F3E /* Nimble-OSXTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +359,16 @@
 			mainGroup = 8E01E9A719D91C5300E11F9A;
 			productRefGroup = 8E01E9B119D91C5300E11F9A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8E14937D19DA166F00A49F3E /* Products */;
+					ProjectRef = 8E14937C19DA166F00A49F3E /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = 8E14936D19DA165C00A49F3E /* Products */;
+					ProjectRef = 8E14936C19DA165C00A49F3E /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8E01E9AF19D91C5300E11F9A /* Dowwn */,
@@ -282,6 +376,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8E14937519DA165C00A49F3E /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 8E14937419DA165C00A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14937719DA165C00A49F3E /* QuickTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QuickTests.xctest;
+			remoteRef = 8E14937619DA165C00A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14937919DA165C00A49F3E /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 8E14937819DA165C00A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14937B19DA165C00A49F3E /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = 8E14937A19DA165C00A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14938419DA167000A49F3E /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 8E14938319DA167000A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14938619DA167000A49F3E /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 8E14938519DA167000A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14938819DA167000A49F3E /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 8E14938719DA167000A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E14938A19DA167000A49F3E /* Nimble-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Nimble-OSXTests.xctest";
+			remoteRef = 8E14938919DA167000A49F3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8E01E9AE19D91C5300E11F9A /* Resources */ = {
@@ -353,8 +506,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E14936A19DA14E500A49F3E /* ProfileViewController.swift in Sources */,
-				8E14936B19DA14F200A49F3E /* FeedViewController.swift in Sources */,
 				8E01E9CF19D91C5300E11F9A /* DowwnTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
