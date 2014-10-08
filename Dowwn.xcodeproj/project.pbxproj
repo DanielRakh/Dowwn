@@ -11,7 +11,6 @@
 		8E01E9BE19D91C5300E11F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BC19D91C5300E11F9A /* Main.storyboard */; };
 		8E01E9C019D91C5300E11F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BF19D91C5300E11F9A /* Images.xcassets */; };
 		8E01E9C319D91C5300E11F9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */; };
-		8E01E9CF19D91C5300E11F9A /* DowwnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */; };
 		8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
 		8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931219D9329E00A49F3E /* CreateEventViewController.swift */; };
 		8E14936919DA14E500A49F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14936819DA14E500A49F3E /* ProfileViewController.swift */; };
@@ -52,7 +51,6 @@
 		8E01E9C219D91C5300E11F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E01E9C819D91C5300E11F9A /* DowwnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowwnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E01E9CD19D91C5300E11F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowwnTests.swift; sourceTree = "<group>"; };
 		8E14931019D9329100A49F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8E14931219D9329E00A49F3E /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		8E14936819DA14E500A49F3E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 		8E01E9CB19D91C5300E11F9A /* DowwnTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E01E9CE19D91C5300E11F9A /* DowwnTests.swift */,
 				8E01E9CC19D91C5300E11F9A /* Supporting Files */,
 			);
 			path = DowwnTests;
@@ -347,7 +344,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E01E9CF19D91C5300E11F9A /* DowwnTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
