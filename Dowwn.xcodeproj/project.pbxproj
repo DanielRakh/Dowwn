@@ -12,6 +12,9 @@
 		8E01E9C019D91C5300E11F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BF19D91C5300E11F9A /* Images.xcassets */; };
 		8E01E9C319D91C5300E11F9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */; };
 		8E721D9519E5F6BC0094FA72 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D79F04A0F9C7E1B325FEAFB3 /* libPods.a */; };
+		8E721D9819E5F8430094FA72 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9719E5F8430094FA72 /* UserTests.swift */; };
+		8E721D9B19E5F92D0094FA72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9A19E5F92D0094FA72 /* User.swift */; };
+		8E721D9C19E5F92D0094FA72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9A19E5F92D0094FA72 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		8E01E9C819D91C5300E11F9A /* DowwnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowwnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E01E9CD19D91C5300E11F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dowwn-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E721D9619E5F8420094FA72 /* DowwnTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DowwnTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E721D9719E5F8430094FA72 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		8E721D9A19E5F92D0094FA72 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D79F04A0F9C7E1B325FEAFB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D1DF8288622C013E443FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +104,7 @@
 		8E01E9B219D91C5300E11F9A /* Dowwn */ = {
 			isa = PBXGroup;
 			children = (
+				8E721D9919E5F90F0094FA72 /* Model */,
 				8E01E9B519D91C5300E11F9A /* AppDelegate.swift */,
 				8E01E9BC19D91C5300E11F9A /* Main.storyboard */,
 				8E01E9BF19D91C5300E11F9A /* Images.xcassets */,
@@ -120,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				8E01E9CC19D91C5300E11F9A /* Supporting Files */,
+				8E721D9719E5F8430094FA72 /* UserTests.swift */,
+				8E721D9619E5F8420094FA72 /* DowwnTests-Bridging-Header.h */,
 			);
 			path = DowwnTests;
 			sourceTree = "<group>";
@@ -130,6 +139,14 @@
 				8E01E9CD19D91C5300E11F9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E721D9919E5F90F0094FA72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E721D9A19E5F92D0094FA72 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E721D9B19E5F92D0094FA72 /* User.swift in Sources */,
 				8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E721D9C19E5F92D0094FA72 /* User.swift in Sources */,
+				8E721D9819E5F8430094FA72 /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -440,6 +461,8 @@
 				INFOPLIST_FILE = DowwnTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DowwnTests/DowwnTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dowwn.app/Dowwn";
 			};
 			name = Debug;
@@ -448,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -455,6 +479,7 @@
 				INFOPLIST_FILE = DowwnTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DowwnTests/DowwnTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dowwn.app/Dowwn";
 			};
 			name = Release;
