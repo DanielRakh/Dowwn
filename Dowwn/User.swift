@@ -10,7 +10,13 @@ import Foundation
 
 class User {
     
-    var name:String?
+    let name:String
+    var eventsCreated = NSMutableArray()
+    var eventsSubscribed = NSMutableArray()
+    var eventsLiked = NSMutableArray()
+    var friends = NSMutableArray()
+    var normalProfilePicturePath:String?
+    var thumbnailProfilePicturePath:String?
     
     required init(name: String) {
         self.name = name
