@@ -15,6 +15,9 @@
 		8E721D9819E5F8430094FA72 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9719E5F8430094FA72 /* UserTests.swift */; };
 		8E721D9B19E5F92D0094FA72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9A19E5F92D0094FA72 /* User.swift */; };
 		8E721D9C19E5F92D0094FA72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9A19E5F92D0094FA72 /* User.swift */; };
+		8E721D9E19E610060094FA72 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9D19E610060094FA72 /* EventTests.swift */; };
+		8E721DA019E612220094FA72 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9F19E612220094FA72 /* Event.swift */; };
+		8E721DA119E612220094FA72 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721D9F19E612220094FA72 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 		8E721D9619E5F8420094FA72 /* DowwnTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DowwnTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E721D9719E5F8430094FA72 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		8E721D9A19E5F92D0094FA72 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8E721D9D19E610060094FA72 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
+		8E721D9F19E612220094FA72 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D79F04A0F9C7E1B325FEAFB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D1DF8288622C013E443FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +133,7 @@
 			children = (
 				8E01E9CC19D91C5300E11F9A /* Supporting Files */,
 				8E721D9719E5F8430094FA72 /* UserTests.swift */,
+				8E721D9D19E610060094FA72 /* EventTests.swift */,
 				8E721D9619E5F8420094FA72 /* DowwnTests-Bridging-Header.h */,
 			);
 			path = DowwnTests;
@@ -145,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				8E721D9A19E5F92D0094FA72 /* User.swift */,
+				8E721D9F19E612220094FA72 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E721D9B19E5F92D0094FA72 /* User.swift in Sources */,
+				8E721DA019E612220094FA72 /* Event.swift in Sources */,
 				8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E721DA119E612220094FA72 /* Event.swift in Sources */,
 				8E721D9C19E5F92D0094FA72 /* User.swift in Sources */,
+				8E721D9E19E610060094FA72 /* EventTests.swift in Sources */,
 				8E721D9819E5F8430094FA72 /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

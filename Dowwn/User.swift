@@ -21,5 +21,11 @@ class User {
     required init(name: String) {
         self.name = name
     }
-    
+
+}
+
+extension User: Equatable {}
+
+func == (lhs: User, rhs: User) -> Bool {
+    return true
 }
