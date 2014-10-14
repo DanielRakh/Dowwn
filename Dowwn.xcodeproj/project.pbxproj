@@ -27,6 +27,9 @@
 		8E6235F819D9279500FBD458 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235F719D9279500FBD458 /* SystemConfiguration.framework */; };
 		8E6235FA19D928E600FBD458 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235F919D928E600FBD458 /* Social.framework */; };
 		8E6235FC19D928EC00FBD458 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235FB19D928EC00FBD458 /* Accounts.framework */; };
+		8E721DA319E8B24E0094FA72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721DA219E8B24E0094FA72 /* LoginViewController.swift */; };
+		8E721DA619E8B27D0094FA72 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721DA519E8B27D0094FA72 /* SignUpViewController.swift */; };
+		8E721DA819E8B2AC0094FA72 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721DA719E8B2AC0094FA72 /* IntroViewController.swift */; };
 		8EE3C04819E4BA8C00E3DDAB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE3C04719E4BA8C00E3DDAB /* Parse.framework */; };
 		FC8EDC1F06E9CFFF693D56C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D79F04A0F9C7E1B325FEAFB3 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,9 @@
 		8E6235F719D9279500FBD458 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8E6235F919D928E600FBD458 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8E6235FB19D928EC00FBD458 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8E721DA219E8B24E0094FA72 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E721DA519E8B27D0094FA72 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8E721DA719E8B2AC0094FA72 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		8EE3C04719E4BA8C00E3DDAB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1-3/Parse.framework"; sourceTree = "<group>"; };
 		D79F04A0F9C7E1B325FEAFB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D1DF8288622C013E443FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,8 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				8E01E9B519D91C5300E11F9A /* AppDelegate.swift */,
-				8E14931019D9329100A49F3E /* FeedViewController.swift */,
 				8E14936819DA14E500A49F3E /* ProfileViewController.swift */,
+				8E721DA419E8B2600094FA72 /* Log In/ Sign Up  */,
+				8E03E31519EDD53B0093218D /* Feed */,
 				8E14931219D9329E00A49F3E /* CreateEventViewController.swift */,
 				8E01E9BC19D91C5300E11F9A /* Main.storyboard */,
 				8E01E9BF19D91C5300E11F9A /* Images.xcassets */,
@@ -195,6 +202,24 @@
 				8E01E9CD19D91C5300E11F9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E03E31519EDD53B0093218D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8E14931019D9329100A49F3E /* FeedViewController.swift */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		8E721DA419E8B2600094FA72 /* Log In/ Sign Up  */ = {
+			isa = PBXGroup;
+			children = (
+				8E721DA219E8B24E0094FA72 /* LoginViewController.swift */,
+				8E721DA519E8B27D0094FA72 /* SignUpViewController.swift */,
+				8E721DA719E8B2AC0094FA72 /* IntroViewController.swift */,
+			);
+			name = "Log In/ Sign Up ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,9 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E721DA619E8B27D0094FA72 /* SignUpViewController.swift in Sources */,
 				8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */,
+				8E721DA819E8B2AC0094FA72 /* IntroViewController.swift in Sources */,
 				8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */,
 				8E14936919DA14E500A49F3E /* ProfileViewController.swift in Sources */,
+				8E721DA319E8B24E0094FA72 /* LoginViewController.swift in Sources */,
 				8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

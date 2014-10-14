@@ -10,6 +10,10 @@ import UIKit
 
 class CreateEventViewController: UIViewController {
     
+    @IBOutlet weak var whatTextField: UITextField!
+    @IBOutlet weak var whereTextField: UITextField!
+    @IBOutlet weak var whenTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +21,12 @@ class CreateEventViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    //MARK: IBActions
+    @IBAction func createEventButtonDidTouch(sender: AnyObject) {
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
