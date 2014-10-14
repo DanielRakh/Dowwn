@@ -25,6 +25,9 @@ class CreateEventViewController: UIViewController {
     @IBAction func createEventButtonDidTouch(sender: AnyObject) {
     }
     
+    @IBAction func closeButtonDidTouch(sender: AnyObject) {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     /*

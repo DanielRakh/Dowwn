@@ -138,6 +138,15 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //MARK: UITableViewDelegate
     
+    
+    //MARK: IBActions
+    
+    @IBAction func createEventButtonDidTouch(sender: AnyObject) {
+        self.performSegueWithIdentifier("presentCreateEventVC", sender: self)
+    }
+    @IBAction func profileUserButtonDidTouch(sender: AnyObject) {
+        self.performSegueWithIdentifier("presentProfileVC", sender: self)
+    }
 
     /*
     // MARK: - Navigation

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BEC-OD-box">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BEC-OD-box">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Profile View Controller-->
         <scene sceneID="J1O-2v-iLr">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcB-Iv-oKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="rR6-EJ-20T" customClass="ProfileViewController" customModule="Dowwn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="POz-nZ-Le0"/>
@@ -23,15 +24,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="logoutButtonDidTouch:" destination="rR6-EJ-20T" eventType="touchUpInside" id="roU-7k-rfM"/>
+                                    <action selector="logoutButtonDidTouch:" destination="rR6-EJ-20T" eventType="touchUpInside" id="wyy-oE-zpZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current User Logged In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtz-Bm-LuY">
-                                <rect key="frame" x="208" y="242" width="185" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4F-le-1Dh">
                                 <rect key="frame" x="277" y="289" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -44,16 +39,56 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="closeButtonDidTouch:" destination="rR6-EJ-20T" eventType="touchUpInside" id="F9x-Sp-nXF"/>
+                                    <action selector="closeButtonDidTouch:" destination="rR6-EJ-20T" eventType="touchUpInside" id="k2P-ot-lhL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current User Logged In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtz-Bm-LuY">
+                                <rect key="frame" x="208" y="242" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H5Z-mQ-x3J" firstAttribute="top" secondItem="E4F-le-1Dh" secondAttribute="bottom" constant="165" id="0Zw-ue-SD6"/>
+                            <constraint firstItem="Vtz-Bm-LuY" firstAttribute="top" secondItem="POz-nZ-Le0" secondAttribute="bottom" constant="161" id="1Bg-rp-OnU"/>
+                            <constraint firstItem="jzk-a4-1o6" firstAttribute="top" secondItem="POz-nZ-Le0" secondAttribute="bottom" id="2RG-gA-l2d"/>
+                            <constraint firstAttribute="centerX" secondItem="H5Z-mQ-x3J" secondAttribute="centerX" id="CKJ-6Z-pMJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Vtz-Bm-LuY" secondAttribute="centerX" constant="-0.5" id="Hdl-T0-iGA"/>
+                            <constraint firstItem="jzk-a4-1o6" firstAttribute="leading" secondItem="iqp-oj-9mO" secondAttribute="leadingMargin" id="aq0-PQ-LQS"/>
+                            <constraint firstAttribute="centerX" secondItem="E4F-le-1Dh" secondAttribute="centerX" id="jJ3-O6-PtD"/>
+                            <constraint firstItem="E4F-le-1Dh" firstAttribute="top" secondItem="Vtz-Bm-LuY" secondAttribute="bottom" constant="53" id="zjV-ZB-2Bh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2RG-gA-l2d"/>
+                                <exclude reference="aq0-PQ-LQS"/>
+                                <exclude reference="1Bg-rp-OnU"/>
+                                <exclude reference="Hdl-T0-iGA"/>
+                                <exclude reference="jJ3-O6-PtD"/>
+                                <exclude reference="zjV-ZB-2Bh"/>
+                                <exclude reference="0Zw-ue-SD6"/>
+                                <exclude reference="CKJ-6Z-pMJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="2RG-gA-l2d"/>
+                                <include reference="aq0-PQ-LQS"/>
+                                <include reference="1Bg-rp-OnU"/>
+                                <include reference="Hdl-T0-iGA"/>
+                                <include reference="jJ3-O6-PtD"/>
+                                <include reference="zjV-ZB-2Bh"/>
+                                <include reference="0Zw-ue-SD6"/>
+                                <include reference="CKJ-6Z-pMJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="E4F-le-1Dh" id="boO-ml-Dde"/>
+                        <outlet property="nameLabel" destination="E4F-le-1Dh" id="cUJ-2m-5k0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wcB-Iv-oKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1730" y="-194"/>
         </scene>
@@ -111,14 +146,19 @@
                     <navigationItem key="navigationItem" title="Dowwn" id="1B3-E9-VTa">
                         <barButtonItem key="leftBarButtonItem" title="User" id="alp-re-LQF">
                             <connections>
-                                <segue destination="rR6-EJ-20T" kind="presentation" id="U2i-w9-E5B"/>
+                                <action selector="profileUserButtonDidTouch:" destination="vXZ-lx-hvc" id="z8H-Ht-1dd"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fHu-M9-3z6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fHu-M9-3z6">
+                            <connections>
+                                <action selector="createEventButtonDidTouch:" destination="vXZ-lx-hvc" id="tbl-Fv-nia"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="adx-zG-8l3" id="pvw-s6-efw"/>
                         <segue destination="uhx-uN-9PV" kind="presentation" identifier="presentCreateEventVC" id="yyk-uz-VTI"/>
+                        <segue destination="rR6-EJ-20T" kind="presentation" identifier="presentProfileVC" id="2h8-gg-rf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -137,6 +177,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j44-R8-qts">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Create Event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createEventButtonDidTouch:" destination="uhx-uN-9PV" eventType="touchUpInside" id="VXx-tC-YNK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGP-Pc-I5n">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHA-cm-xmF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonDidTouch:" destination="uhx-uN-9PV" eventType="touchUpInside" id="zer-zh-fpN"/>
+                                    <action selector="createEventButtonDidTouch:" destination="uhx-uN-9PV" eventType="touchUpInside" id="iQl-E7-BI0"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Czf-1o-Ply">
                                 <rect key="frame" x="16" y="84" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -152,48 +220,61 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j44-R8-qts">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Create Event">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="createEventButtonDidTouch:" destination="uhx-uN-9PV" eventType="touchUpInside" id="VXx-tC-YNK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Czf-1o-Ply" firstAttribute="top" secondItem="LI9-fq-W5M" secondAttribute="bottom" constant="64" id="HlZ-Rk-XXl"/>
+                            <constraint firstItem="Czf-1o-Ply" firstAttribute="top" secondItem="LI9-fq-W5M" secondAttribute="bottom" constant="64" id="HlZ-Rk-XXl">
+                                <variation key="widthClass=compact" constant="57"/>
+                            </constraint>
                             <constraint firstItem="eJa-pF-tAA" firstAttribute="trailing" secondItem="TSF-qG-dmB" secondAttribute="trailingMargin" id="J51-CH-4PV"/>
-                            <constraint firstItem="asX-3d-0wo" firstAttribute="trailing" secondItem="TSF-qG-dmB" secondAttribute="trailingMargin" id="L5J-yz-pAL"/>
+                            <constraint firstItem="dHA-cm-xmF" firstAttribute="top" secondItem="j44-R8-qts" secondAttribute="bottom" constant="8" id="Jtw-FQ-ytI">
+                                <variation key="widthClass=compact" constant="46"/>
+                            </constraint>
+                            <constraint firstItem="asX-3d-0wo" firstAttribute="trailing" secondItem="TSF-qG-dmB" secondAttribute="trailingMargin" id="L5J-yz-pAL">
+                                <variation key="widthClass=compact" constant="-1"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="dHA-cm-xmF" secondAttribute="centerX" constant="1" id="LCK-M7-jPQ"/>
                             <constraint firstItem="eJa-pF-tAA" firstAttribute="leading" secondItem="TSF-qG-dmB" secondAttribute="leadingMargin" id="N7Q-TO-PJ3"/>
                             <constraint firstItem="Czf-1o-Ply" firstAttribute="leading" secondItem="TSF-qG-dmB" secondAttribute="leadingMargin" id="PPr-y0-GUt"/>
-                            <constraint firstItem="asX-3d-0wo" firstAttribute="top" secondItem="Czf-1o-Ply" secondAttribute="bottom" constant="121" id="QMe-Hp-CGM"/>
-                            <constraint firstItem="eJa-pF-tAA" firstAttribute="top" secondItem="asX-3d-0wo" secondAttribute="bottom" constant="128" id="XMw-tm-Ego"/>
+                            <constraint firstItem="asX-3d-0wo" firstAttribute="top" secondItem="Czf-1o-Ply" secondAttribute="bottom" constant="121" id="QMe-Hp-CGM">
+                                <variation key="widthClass=compact" constant="72"/>
+                            </constraint>
+                            <constraint firstItem="eJa-pF-tAA" firstAttribute="top" secondItem="asX-3d-0wo" secondAttribute="bottom" constant="128" id="XMw-tm-Ego">
+                                <variation key="widthClass=compact" constant="87"/>
+                            </constraint>
                             <constraint firstItem="Czf-1o-Ply" firstAttribute="trailing" secondItem="TSF-qG-dmB" secondAttribute="trailingMargin" id="Xxl-t3-qqh"/>
                             <constraint firstAttribute="centerX" secondItem="j44-R8-qts" secondAttribute="centerX" id="a9E-pk-mTC"/>
                             <constraint firstItem="j44-R8-qts" firstAttribute="top" secondItem="eJa-pF-tAA" secondAttribute="bottom" constant="94" id="omk-UQ-tVP">
-                                <variation key="widthClass=compact" constant="86"/>
+                                <variation key="widthClass=compact" constant="111"/>
                             </constraint>
-                            <constraint firstItem="asX-3d-0wo" firstAttribute="leading" secondItem="TSF-qG-dmB" secondAttribute="leadingMargin" id="rQb-zx-7MP"/>
+                            <constraint firstItem="asX-3d-0wo" firstAttribute="leading" secondItem="TSF-qG-dmB" secondAttribute="leadingMargin" id="rQb-zx-7MP">
+                                <variation key="widthClass=compact" constant="-1"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="j44-R8-qts"/>
+                                <exclude reference="eGP-Pc-I5n"/>
+                                <exclude reference="dHA-cm-xmF"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="a9E-pk-mTC"/>
                                 <exclude reference="omk-UQ-tVP"/>
+                                <exclude reference="Jtw-FQ-ytI"/>
+                                <exclude reference="LCK-M7-jPQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="j44-R8-qts"/>
+                                <include reference="eGP-Pc-I5n"/>
+                                <include reference="dHA-cm-xmF"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="a9E-pk-mTC"/>
                                 <include reference="omk-UQ-tVP"/>
+                                <include reference="Jtw-FQ-ytI"/>
+                                <include reference="LCK-M7-jPQ"/>
                             </mask>
                         </variation>
                     </view>

@@ -26,6 +26,7 @@ class ProfileViewController: UIViewController {
     
 
     @IBAction func closeButtonDidTouch(sender: AnyObject) {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func logoutButtonDidTouch(sender: AnyObject) {
