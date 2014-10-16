@@ -12,9 +12,15 @@
 		8E01E9C019D91C5300E11F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BF19D91C5300E11F9A /* Images.xcassets */; };
 		8E01E9C319D91C5300E11F9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */; };
 		8E03E32D19EE0CB90093218D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
+		8E03E32F19EE12550093218D /* CreateEventViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03E32E19EE12550093218D /* CreateEventViewControllerSpec.swift */; };
+		8E03E33019EE127C0093218D /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931219D9329E00A49F3E /* CreateEventViewController.swift */; };
 		8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931019D9329100A49F3E /* FeedViewController.swift */; };
 		8E14931319D9329E00A49F3E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14931219D9329E00A49F3E /* CreateEventViewController.swift */; };
 		8E14936919DA14E500A49F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14936819DA14E500A49F3E /* ProfileViewController.swift */; };
+		8E4E9ECF19EE186B00E2E0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E01E9BC19D91C5300E11F9A /* Main.storyboard */; };
+		8E4E9ED719EEF7FA00E2E0F4 /* FeedTableViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E9ED619EEF7FA00E2E0F4 /* FeedTableViewCellSpec.swift */; };
+		8E4E9ED919EEFA6900E2E0F4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E9ED819EEFA6900E2E0F4 /* FeedTableViewCell.swift */; };
+		8E4E9EDA19EEFA6900E2E0F4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E9ED819EEFA6900E2E0F4 /* FeedTableViewCell.swift */; };
 		8E6235E119D9252300FBD458 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235DE19D9252300FBD458 /* Bolts.framework */; };
 		8E6235E619D9274700FBD458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235E519D9274700FBD458 /* AudioToolbox.framework */; };
 		8E6235E819D9275000FBD458 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6235E719D9275000FBD458 /* CFNetwork.framework */; };
@@ -32,7 +38,6 @@
 		8E721DA619E8B27D0094FA72 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721DA519E8B27D0094FA72 /* SignUpViewController.swift */; };
 		8E721DA819E8B2AC0094FA72 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E721DA719E8B2AC0094FA72 /* IntroViewController.swift */; };
 		8EAC82EB19EDF30D007EA3EF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAC82E419EDF2FE007EA3EF /* Nimble.framework */; };
-		8EAC82EC19EDF30D007EA3EF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAC82D519EDF2F1007EA3EF /* Quick.framework */; };
 		8EAC82EF19EDF396007EA3EF /* FeedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC82EE19EDF396007EA3EF /* FeedViewControllerSpec.swift */; };
 		8EAC82F219EDF6BD007EA3EF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE3C04719E4BA8C00E3DDAB /* Parse.framework */; };
 		8EE3C04819E4BA8C00E3DDAB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE3C04719E4BA8C00E3DDAB /* Parse.framework */; };
@@ -46,20 +51,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8E01E9AF19D91C5300E11F9A;
 			remoteInfo = Dowwn;
-		};
-		8EAC82D419EDF2F1007EA3EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EAC82CC19EDF2F0007EA3EF /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAEB6B8E1943873100289F44;
-			remoteInfo = Quick;
-		};
-		8EAC82D619EDF2F1007EA3EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EAC82CC19EDF2F0007EA3EF /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAEB6B991943873100289F44;
-			remoteInfo = QuickTests;
 		};
 		8EAC82D819EDF2F1007EA3EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -89,20 +80,6 @@
 			remoteGlobalIDString = 1F1A74341940169200FFFC47;
 			remoteInfo = "Nimble-iOSTests";
 		};
-		8EAC82E719EDF2FE007EA3EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EAC82DC19EDF2FD007EA3EF /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
-			remoteInfo = "Nimble-OSX";
-		};
-		8EAC82E919EDF2FE007EA3EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EAC82DC19EDF2FD007EA3EF /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
-			remoteInfo = "Nimble-OSXTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -115,9 +92,12 @@
 		8E01E9C219D91C5300E11F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E01E9C819D91C5300E11F9A /* DowwnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowwnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E01E9CD19D91C5300E11F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E03E32E19EE12550093218D /* CreateEventViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewControllerSpec.swift; sourceTree = "<group>"; };
 		8E14931019D9329100A49F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8E14931219D9329E00A49F3E /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		8E14936819DA14E500A49F3E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8E4E9ED619EEF7FA00E2E0F4 /* FeedTableViewCellSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCellSpec.swift; sourceTree = "<group>"; };
+		8E4E9ED819EEFA6900E2E0F4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dowwn-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E6235DE19D9252300FBD458 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1-2/Bolts.framework"; sourceTree = "<group>"; };
 		8E6235E519D9274700FBD458 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -173,7 +153,6 @@
 			files = (
 				8EAC82EB19EDF30D007EA3EF /* Nimble.framework in Frameworks */,
 				8EAC82F219EDF6BD007EA3EF /* Parse.framework in Frameworks */,
-				8EAC82EC19EDF30D007EA3EF /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +220,7 @@
 				8E14931219D9329E00A49F3E /* CreateEventViewController.swift */,
 				8E01E9BC19D91C5300E11F9A /* Main.storyboard */,
 				8E01E9BF19D91C5300E11F9A /* Images.xcassets */,
-				8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */,
 				8E01E9B319D91C5300E11F9A /* Supporting Files */,
-				8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */,
 			);
 			path = Dowwn;
 			sourceTree = "<group>";
@@ -251,6 +228,8 @@
 		8E01E9B319D91C5300E11F9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E01E9C119D91C5300E11F9A /* LaunchScreen.xib */,
+				8E6235DB19D924E600FBD458 /* Dowwn-Bridging-Header.h */,
 				8E01E9B419D91C5300E11F9A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -259,11 +238,12 @@
 		8E01E9CB19D91C5300E11F9A /* DowwnTests */ = {
 			isa = PBXGroup;
 			children = (
+				8EAC82EE19EDF396007EA3EF /* FeedViewControllerSpec.swift */,
+				8E4E9ED619EEF7FA00E2E0F4 /* FeedTableViewCellSpec.swift */,
+				8E03E32E19EE12550093218D /* CreateEventViewControllerSpec.swift */,
 				8EAC82DC19EDF2FD007EA3EF /* Nimble.xcodeproj */,
 				8EAC82CC19EDF2F0007EA3EF /* Quick.xcodeproj */,
 				8E01E9CC19D91C5300E11F9A /* Supporting Files */,
-				8EAC82EE19EDF396007EA3EF /* FeedViewControllerSpec.swift */,
-				8EAC82ED19EDF396007EA3EF /* DowwnTests-Bridging-Header.h */,
 			);
 			path = DowwnTests;
 			sourceTree = "<group>";
@@ -271,6 +251,7 @@
 		8E01E9CC19D91C5300E11F9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EAC82ED19EDF396007EA3EF /* DowwnTests-Bridging-Header.h */,
 				8E01E9CD19D91C5300E11F9A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -280,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				8E14931019D9329100A49F3E /* FeedViewController.swift */,
+				8E4E9ED819EEFA6900E2E0F4 /* FeedTableViewCell.swift */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -297,8 +279,6 @@
 		8EAC82CD19EDF2F0007EA3EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EAC82D519EDF2F1007EA3EF /* Quick.framework */,
-				8EAC82D719EDF2F1007EA3EF /* QuickTests.xctest */,
 				8EAC82D919EDF2F1007EA3EF /* Quick.framework */,
 				8EAC82DB19EDF2F1007EA3EF /* Quick-iOSTests.xctest */,
 			);
@@ -310,8 +290,6 @@
 			children = (
 				8EAC82E419EDF2FE007EA3EF /* Nimble.framework */,
 				8EAC82E619EDF2FE007EA3EF /* NimbleTests.xctest */,
-				8EAC82E819EDF2FE007EA3EF /* Nimble.framework */,
-				8EAC82EA19EDF2FE007EA3EF /* Nimble-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,20 +383,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8EAC82D519EDF2F1007EA3EF /* Quick.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Quick.framework;
-			remoteRef = 8EAC82D419EDF2F1007EA3EF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8EAC82D719EDF2F1007EA3EF /* QuickTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = QuickTests.xctest;
-			remoteRef = 8EAC82D619EDF2F1007EA3EF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		8EAC82D919EDF2F1007EA3EF /* Quick.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -447,20 +411,6 @@
 			remoteRef = 8EAC82E519EDF2FE007EA3EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8EAC82E819EDF2FE007EA3EF /* Nimble.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Nimble.framework;
-			remoteRef = 8EAC82E719EDF2FE007EA3EF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8EAC82EA19EDF2FE007EA3EF /* Nimble-OSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Nimble-OSXTests.xctest";
-			remoteRef = 8EAC82E919EDF2FE007EA3EF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -478,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4E9ECF19EE186B00E2E0F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E721DA619E8B27D0094FA72 /* SignUpViewController.swift in Sources */,
+				8E4E9ED919EEFA6900E2E0F4 /* FeedTableViewCell.swift in Sources */,
 				8E01E9B619D91C5300E11F9A /* AppDelegate.swift in Sources */,
 				8E721DA819E8B2AC0094FA72 /* IntroViewController.swift in Sources */,
 				8E14931119D9329100A49F3E /* FeedViewController.swift in Sources */,
@@ -536,7 +488,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E03E32D19EE0CB90093218D /* FeedViewController.swift in Sources */,
+				8E4E9EDA19EEFA6900E2E0F4 /* FeedTableViewCell.swift in Sources */,
+				8E4E9ED719EEF7FA00E2E0F4 /* FeedTableViewCellSpec.swift in Sources */,
 				8EAC82EF19EDF396007EA3EF /* FeedViewControllerSpec.swift in Sources */,
+				8E03E32F19EE12550093218D /* CreateEventViewControllerSpec.swift in Sources */,
+				8E03E33019EE127C0093218D /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

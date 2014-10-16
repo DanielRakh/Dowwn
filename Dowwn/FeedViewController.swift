@@ -17,10 +17,9 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return PFUser.currentUser()
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.checkForUserSession()
     }
     
@@ -34,8 +33,6 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = "This is the title"
-        cell.detailTextLabel?.text = "This is the subtitle"
         return cell
     }
     
